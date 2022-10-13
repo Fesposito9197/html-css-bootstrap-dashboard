@@ -1,0 +1,22 @@
+
+.page-container{
+    height: calc(100vh - 28px);
+    
+}
+
+
+
+aside{
+    width: auto;
+    background-color: #051e34;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+main{
+    flex-grow: 1;
+    background-color: black;
+}
+
+
+
