@@ -1,6 +1,6 @@
 
 .page-container{
-    height: calc(100vh - 28px);
+    height: calc(100vh - 50px);
     
 }
 
@@ -11,11 +11,12 @@ aside{
     background-color: #051e34;
     padding: 20px;
     flex-shrink: 0;
+    background-image: url(aside.css/);
 }
 
 main{
     flex-grow: 1;
-    background-color: black;
+    
 }
 
 

@@ -5,3 +5,12 @@
 header img{
     height: 50px;
 }
+
+.ms-img-size{
+    max-width: 120px ;
+    max-height: 300px;
+}
+
+.ms-bell-color{
+    color:#ff8f00 ;
+}
