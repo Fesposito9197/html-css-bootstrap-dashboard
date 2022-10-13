@@ -11,7 +11,7 @@ aside{
     background-color: #051e34;
     padding: 20px;
     flex-shrink: 0;
-    background-image: url(aside.css/);
+    background-image: url(/img/sidebar-bg.png);
 }
 
 main{
