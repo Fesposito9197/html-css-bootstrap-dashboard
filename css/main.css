@@ -12,3 +12,8 @@
     background-color:#155cbf ;
 
 }
+main{
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    
+}

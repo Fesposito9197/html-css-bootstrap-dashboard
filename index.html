@@ -26,15 +26,15 @@
                         <img src="img/mobile-logo.png" alt="#" class="d-lg-none">
                         <img src="img/logo.svg" alt="#" class="d-none d-lg-block ms-img-size">
                     </div>
-                    <div class="col flex-grow-1">
+                    <div class="col ">
                         <div class="input-group">
+                            <input type="text"  placeholder=" Prova a cercare:Lezioni di Laravel" name="" id="" class="w-100 ">
                             
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="col-auto">
-                        <div class="d-none d-lg-inline-block text-secondary me-2 "><i class="fa-solid fa-list-ul"></i></div>
-                        <div class="d-none d-lg-inline-block text-secondary me-2"><i class="fa-solid fa-circle-question"></i></div>
+                        <div class="d-none d-lg-inline-block text-secondary me-3 "><i class="fa-solid fa-list-ul"></i></div>
+                        <div class="d-none d-lg-inline-block text-secondary me-3"><i class="fa-solid fa-circle-question"></i></div>
                         <div class="d-none d-lg-inline-block text-secondary "><i class="fa-solid fa-ellipsis-vertical"></i></div>
                         <div class="dropdown d-inline-block">
                             <button class="btn pt-0 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,15 +53,19 @@
         </header>
 
         <div class="page-container d-flex ">
+            <!-- sezione sidebar -->
             <aside class="">
-                <ul class="list-unstyled d-flex flex-column text-white h-100">
+                <ul class="list-unstyled d-flex flex-column text-white h-100 mb-0">
                     <li class="py-2">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="ms-2 d-none d-lg-inline-block">Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>
+                        <span class="ms-2 d-none d-lg-inline-block align-middle">Home</span>
                     </li>
                     <li class="py-1">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span class="ms-2 d-none d-lg-inline-block">Stats</span>
+                        <i class="fa-solid fa-chart-simple ms-w-20"></i>
+                        <span class="ms-2 d-none d-lg-inline-block ">Stats</span>
                     </li>
                     <li class=" py-1 flex-grow-1">
                         <i class="fa-solid fa-signal"></i>
@@ -74,12 +78,22 @@
                     
                 </ul>
             </aside>
+            <!-- /sezione sid bar  -->
             <main class="">
+                <!-- sezione header main -->
                 <div class="container-fluid ms-hero text-white">
                     <div class="row py-3">
                         <div class="col-12 col-lg-8">
-                            <h2>Boolean <span class="badge rounded-pill ms-badge-bg fw-light ">Piano blaxe</span></h2>
-                            
+                            <h2 class="d-inline-block">Boolean</h2>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block">Piano blaxe</span>
+                           <div>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block">3 app</span>
+                            <span ><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block d-lg-none "><i class="fa-solid fa-plus"></i></span>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block d-none d-lg-inline-block">Boolean mobile app</span>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block d-none d-lg-inline-block">Boolean web app</span>
+                            <span class="badge rounded-pill ms-badge-bg fw-light d-inline-block d-none d-lg-inline-block">Boolean blog app</span>
+                           </div>
                         </div>
                         <div class="col-12 col-lg-4 fw-semibold">
                            <span class="d-block">Studenti online negli ultimi 30 minuti</span>
@@ -87,6 +101,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- /sezione header main -->
+                
+
             </main>
         </div>
         <!-- bootstrap js -->
