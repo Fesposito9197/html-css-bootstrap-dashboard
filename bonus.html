@@ -133,7 +133,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-success fw-light ">done</span></td>
+                                            <td><span class="badge bg-success fw-semibold ">Done</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light  btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -150,7 +150,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">16 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge  bg-success fw-light ">done</span></td>
+                                            <td><span class="badge  bg-success fw-semibold ">Done</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -167,7 +167,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">17 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-warning fw-light p">process</span></td>
+                                            <td><span class="badge bg-warning fw-semibold p">Process</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -184,7 +184,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">18 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge  bg-success fw-light ">done</span></td>
+                                            <td><span class="badge  bg-success fw-semibold ">Done</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -201,7 +201,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">19 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-danger fw-light ">done</span></td>
+                                            <td><span class="badge bg-danger fw-semibold ">Failed</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -218,7 +218,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">20 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-success fw-light ">done</span></td>
+                                            <td><span class="badge bg-success fw-semibold ">Done</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -235,7 +235,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">21 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-danger fw-light ">done</span></td>
+                                            <td><span class="badge bg-danger fw-semibold ">Failed</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -252,7 +252,7 @@
                                             </th>
                                             <td class="d-none d-md-table-cell">22 Feb 2021</td>
                                             <td class="d-none d-sm-table-cell">20%</td>
-                                            <td><span class="badge bg-success fw-light ">done</span></td>
+                                            <td><span class="badge bg-success fw-semibold ">Done</span></td>
                                             <td>
                                                 <button type="button" class="btn btn-light btn-sm text-secondary">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -372,7 +372,8 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card " >
-                                                <img src="img/stats.jpeg" class="card-img-top" alt="">
+                                                <canvas id="myChart" width="400" height="400"></canvas>
+
                                                 <div class="card-body">
                                                   <h5 class="card-title">Utenti attivi</h5>
                                                   <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -431,6 +432,48 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <!-- /bootstrap js -->
         <!-- cdn chart js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio'],
+                    datasets: [{
+                        label: 'Numbers of Users',
+                        data: [18, 49, 11, 13, 9],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    plugins:{
+                        legend:{
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                
+                }
+            });
+            </script>
         <!-- /cdn chart js -->
 
 
